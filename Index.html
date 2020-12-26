@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="ISO-8859-1">
+
+<meta title="Free qr code Generator">
+
+<meta name="description" content="Free qr code Generator">
+
+  <meta name="keywords" content="QR, qr, qrcode,Free qr code Generator">
+
+  <meta name="author" content="Madushan Joel">
+
+  <meta property="fb:pages" content="110253010677111" />
+
+ <script data-ad-client="ca-pub-5187546188700939" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ES33SCKCBX"></script>
+
+<script>
+
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag(){dataLayer.push(arguments);}
+
+  gtag('js', new Date());
+
+  gtag('config', 'G-ES33SCKCBX');
+
+</script>
+
+<style>
+
+	.footer {	   position: fixed;
+
+	   left: 0;
+
+	   bottom: 0;
+
+	   width: 100%;
+
+	   background-color: red;
+
+	   color: white;
+
+	   text-align: center;
+
+	}
+
+	</style>
+
+<!-- #region -->
+
+<!-- #endregion -->
+
+<title>QR CODE Generator</title>
+
+<link rel="icon" href="Imag/iconr.png">
+
+<link rel="canonical" href="https://cssgradient.io/">
+
+<link rel="stylesheet" href="Css/bootstrap.min.css">
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<body>
+
+	<nav class="navbar navbar-light bg-dark">
+
+			<a class="navbar-brand  text-white" ><img src="Imag/iconr.png" style="width: 50px; height: 50px;" onContextMenu="return false"> QR CODE Generator</a>
+
+	  </nav>
+
+<br>
+
+<center>
+
+<div align="center" class="card" style="width: 18rem;">
+
+	<img id="myImg" class="card-img-top" >
+
+	<div class="card-body">
+
+	  <h5 class="card-title">QR CODE</h5>
+
+	  <p class="card-text"></p>
+
+	  <button onclick="gen()" class="btn btn-outline-success" type="button">Generate</button>
+
+	</div>
+
+  </div>
+
+</center>
+
+  <br>
+
+  <div class="alert alert-danger" role="alert" id="myP" hidden>
+
+	null Value 
+
+  </div>
+
+  <br>
+
+  <div>
+
+	<div class="input-group">
+
+	  <div class="input-group-prepend">
+
+		<span class="input-group-text">TEXT/WEB URL</span>
+
+	  </div>
+
+	  <textarea class="form-control" id="txt" aria-label="Text"></textarea>
+
+	</div>
+
+	<br>
+
+	<br>
+
+	<br>
+
+	</div>
+
+<script type="text/javascript">
+
+function gen() {
+
+	//https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=http%3a%2f%2fwww.google.com%2f&choe=utf-8
+
+	myqr=document.getElementById("txt").value;
+
+	if(myqr==""){
+
+		//visible
+
+		document.getElementById("myP").style.visibility = 'visible';
+
+		swal({
+
+  title: "Invalid Text",
+
+  text: "Can't Get Empty Text",
+
+  icon: "error",
+
+});
+
+	}else{
+
+	url="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl="+myqr+"&choe=utf-8"	;
+
+	document.getElementById("myImg").src = url;
+
+	document.getElementById("myP").style.visibility = "hidden";
+
+	}
+
+}
+
+</script>
+
+<div>
+
+<!-- Footer -->
+
+<footer class="bg-dark text-white border-bottom footer">
+
+	<!-- Copyright -->
+
+	<div class="footer-copyright text-center py-3">
+
+	 <a >Developed by Madushan Joel.</a> 
+
+	 <br>
+
+	Sri Lanka 2020 <img src="Imag/slfl.png" class="mw-4" style="width: 26.5px; height: 13.25px; ">
+
+	</div>
+
+	<!-- Copyright -->
+
+  </footer>
+
+  <!-- Footer -->
+
+</div>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle"
+
+     style="display:block; text-align:center;"
+
+     data-ad-layout="in-article"
+
+     data-ad-format="fluid"
+
+     data-ad-client="ca-pub-5187546188700939"
+
+     data-ad-slot="5247351464"></ins>
+
+<script>
+
+     (adsbygoogle = window.adsbygoogle || []).push({});
+
+</script>
+
+</body>
+
+</html>
